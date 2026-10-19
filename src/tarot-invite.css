@@ -1,0 +1,30 @@
+.tarot-invite{width:min(480px,calc(100% - 32px));max-height:calc(100dvh - 32px);margin:auto;padding:32px 34px 24px;border:1px solid #e2dbf2;border-radius:30px;background:radial-gradient(ellipse at 50% 5%,#eee7ff 0,transparent 52%),#fdfbff;color:var(--ink,#22213a);box-shadow:0 32px 100px #30235430;text-align:center;overflow:auto;overscroll-behavior:contain;animation:tarotInviteEnter .28s ease both}
+.tarot-invite::backdrop{background:#22213a66;backdrop-filter:blur(5px)}
+.tarot-invite-close{position:absolute;top:15px;right:15px;display:grid;place-items:center;width:36px;height:36px;border:0;border-radius:50%;background:#ffffff9c;color:#777087;transition:background .2s}
+.tarot-invite-close:hover{background:#eee8f8}
+.tarot-invite-art{width:236px;height:168px;position:relative;margin:0 auto 15px;pointer-events:none}
+.tarot-invite-orbit{position:absolute;width:160px;height:160px;left:38px;top:1px;border:1px solid #a594cc29;border-radius:50%;background:#e8dcfd5c}
+.tarot-invite-card{position:absolute;top:25px;width:80px;height:122px;border:1px solid #9b89c866;border-radius:12px;box-shadow:0 8px 18px #5540761a}
+.tarot-invite-card svg{width:100%;height:100%;stroke:currentColor;stroke-width:.8;stroke-linecap:round;stroke-linejoin:round}
+.tarot-invite-card-left{left:37px;transform:rotate(-19deg);background:#d9c8eb;color:#8c72b1}
+.tarot-invite-card-right{right:37px;transform:rotate(19deg);background:#e1d5f1;color:#937db2}
+.tarot-invite-card-center{left:78px;top:17px;transform:rotate(-3deg);background:linear-gradient(155deg,#8472b9,#695390);color:#eee3ff;box-shadow:0 12px 25px #4e396632}
+.tarot-invite-spark{position:absolute;color:#9b84c6;font-size:21px}
+.tarot-invite-spark-one{left:12px;top:39px}
+.tarot-invite-spark-two{right:8px;top:107px;font-size:28px}
+.tarot-invite-eyebrow{display:block;font-size:10px;font-weight:700;letter-spacing:.2em;color:#8c76ad}
+.tarot-invite h2{margin:11px 0 10px;font-size:30px;line-height:1.25;font-weight:600;letter-spacing:-.035em}
+.tarot-invite-description{max-width:32ch;margin:0 auto;font-size:14px;line-height:1.65;color:#7a7089}
+.tarot-invite-choice{display:flex;flex-direction:column;gap:6px;margin:23px 0;padding:15px 18px;border:1px solid #e6def0;border-radius:16px;background:#ffffffa8}
+.tarot-invite-choice>span{font-size:11px;color:#8b809b}
+.tarot-invite-choice>strong{font-size:15px;font-weight:600;line-height:1.5;overflow-wrap:anywhere}
+.tarot-invite-actions{display:flex;flex-direction:column;gap:7px}
+.tarot-invite-primary{display:flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:13px 18px;background:#7965aa;border:1px solid #7965aa;border-radius:999px;color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:background .2s,box-shadow .2s}
+.tarot-invite-primary:hover{background:#685496;box-shadow:0 6px 16px #7965aa26}
+.tarot-invite-dismiss{min-height:42px;padding:10px 18px;border:1px solid transparent;border-radius:999px;background:transparent;font-size:13px;color:#7a7089;transition:background .2s}
+.tarot-invite-dismiss:hover{background:#eee8f8}
+.tarot-invite :is(button,a):focus-visible{outline:3px solid #9e89c9;outline-offset:3px}
+.tarot-invite-destination{margin:13px 0 0;font-size:10px;line-height:1.5;color:#9a8da9}
+@keyframes tarotInviteEnter{from{opacity:0;transform:translateY(10px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:420px){.tarot-invite{padding:27px 22px 21px;border-radius:25px}.tarot-invite h2{font-size:27px}.tarot-invite-art{margin-bottom:9px}.tarot-invite-choice{margin:20px 0}}
+@media(prefers-reduced-motion:reduce){.tarot-invite{animation:none}.tarot-invite :is(button,a){transition:none}}
