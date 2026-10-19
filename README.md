@@ -6,6 +6,14 @@ A bilingual decision companion with a persistent local journal and optional taro
 
 线上演示 / Live demo: https://effervescent-sprinkles-f61a67.netlify.app/
 
+## 开源与贡献 / Open source and contributions
+
+本项目采用 [MIT License](LICENSE)，允许任何人使用、复制、修改和分发代码，包括商业用途，需保留原版权与许可声明。欢迎 Fork 后修改，并通过 Pull Request 贡献到主仓库；主仓库的写入权限由维护者管理。详见 [贡献指南](CONTRIBUTING.md)。
+
+Licensed under the [MIT License](LICENSE): anyone may use, copy, modify, and redistribute the code, including commercially, while retaining the copyright and license notice. Fork the repository to make changes and submit a pull request to contribute them back. Maintainers manage direct write access. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+第三方依赖和外部服务保留各自的许可证与条款；本仓库的 MIT 许可证不授予 TUTTO TAROT 网站或其素材的使用权。 / Third-party dependencies and external services retain their own licenses and terms. This repository's MIT License does not grant rights to the TUTTO TAROT website or its assets.
+
 ## Run
 
 Use Node.js 22.12 or newer (Node 24 LTS recommended).
